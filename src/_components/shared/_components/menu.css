@@ -1,15 +1,15 @@
 :root {
-  --menu-ink: #131313;
-  --menu-paper: #ece8e1;
-  --menu-muted: #59554f;
+  --menu-ink: #0b2f2b;
+  --menu-paper: var(--color-5);
+  --menu-muted: #2f5f5a;
 }
 
 .menu-overlay {
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
   background:
-    radial-gradient(circle at 15% 20%, #f4d06f 0%, transparent 36%),
-    radial-gradient(circle at 85% 82%, #89b0ae 0%, transparent 30%),
-    linear-gradient(118deg, #efede7 0%, #d8d4cb 100%);
+    radial-gradient(circle at 15% 20%, var(--color-2) 0%, transparent 36%),
+    radial-gradient(circle at 85% 82%, var(--color-4) 0%, transparent 30%),
+    linear-gradient(118deg, var(--color-5) 0%, var(--color-3) 100%);
   color: var(--menu-ink);
 }
 
@@ -80,12 +80,12 @@
 .menu-link:hover,
 .menu-link:focus-visible,
 .menu-link.is-active {
-  color: #0a6f6d;
+  color: var(--color-1);
   transform: translateX(10px);
 }
 
 .menu-link:focus-visible {
-  outline: 2px dashed #0a6f6d;
+  outline: 2px dashed var(--color-1);
   outline-offset: 8px;
 }
 
@@ -115,23 +115,24 @@
 }
 
 .tone-amber {
-  background: linear-gradient(130deg, #be5a2a 0%, #f08d49 100%);
+  background: linear-gradient(130deg, #0e7f73 0%, var(--color-1) 100%);
 }
 
 .tone-coral {
-  background: linear-gradient(130deg, #bb3f3f 0%, #de7373 100%);
+  background: linear-gradient(130deg, #238f83 0%, var(--color-2) 100%);
 }
 
 .tone-olive {
-  background: linear-gradient(130deg, #4f6a46 0%, #7ea16f 100%);
+  background: linear-gradient(130deg, #3da79b 0%, var(--color-3) 100%);
 }
 
 .tone-azure {
-  background: linear-gradient(130deg, #245f7e 0%, #4fa6cc 100%);
+  background: linear-gradient(130deg, #6ebfb7 0%, var(--color-4) 100%);
 }
 
 .tone-graphite {
-  background: linear-gradient(130deg, #30343d 0%, #626875 100%);
+  background: linear-gradient(130deg, #8ccfc8 0%, var(--color-5) 100%);
+  color: #1d4f49;
 }
 
 @media (max-width: 767px) {
