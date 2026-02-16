@@ -1,6 +1,7 @@
 import Footer from "@/_components/shared/Footer";
 import Navbar from "@/_components/shared/Navbar";
 import Hero3D from "@/_components/home/Hero3D";
+import About from "@/_components/home/About";
 
 export default function Home() {
   return (
@@ -8,14 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero3D />
 
-      <section
-        id="about"
-        className="flex min-h-screen items-center justify-center bg-[var(--color-4)]"
-      >
-        <h2 className="border border-black/10 px-5 py-2 text-3xl font-bold uppercase tracking-wide text-[var(--color-1)]">
-          About
-        </h2>
-      </section>
+      <About/>
 
       <section
         id="work"
